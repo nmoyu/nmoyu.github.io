@@ -134,16 +134,14 @@
           <div class="post-nav">
             <div class="post-nav-item">
               {%- if prev %}
-              <div style="text-align: center "> <a href="https://github.com/nmoyu/nmoyu.github.io/edit/myblog/source/_posts" target="_blank">编辑文章✏</a> </div>
-
                 <a href="{{ url_for(prev.path) }}" rel="prev" title="{{ prev.title }}">
                   <i class="fa fa-chevron-left"></i> {{ prev.title }}
                 </a>
               {%- endif %}
             </div>
+            <div style="text-align: center "> <a href="https://github.com/nmoyu/nmoyu.github.io/edit/myblog/source/_posts" target="_blank">编辑文章✏</a> </div>
             <div class="post-nav-item">
               {%- if next %}
-              <div style="text-align: center "> <a href="https://github.com/nmoyu/nmoyu.github.io/edit/myblog/source/_posts" target="_blank">编辑文章✏</a> </div>
                 <a href="{{ url_for(next.path) }}" rel="next" title="{{ next.title }}">
                   {{ next.title }} <i class="fa fa-chevron-right"></i>
                 </a>
