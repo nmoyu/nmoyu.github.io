@@ -76,7 +76,6 @@
 
 {%- if theme.footer.powered %}
   <div class="powered-by">
-     <p>nomoyu（🐂and🍬）</p>
     {%- set next_site = 'https://theme-next.js.org' if theme.scheme === 'Gemini' else 'https://theme-next.js.org/' + theme.scheme | lower + '/' %}
     {{- __('nomoyu（🐂and🍬）', next_url('https://nomoyu.icu', 'tian') + ' & ' + next_url(next_site, 'xiaotian')) }}
   </div>
